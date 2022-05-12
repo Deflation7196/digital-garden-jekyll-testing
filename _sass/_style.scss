@@ -1,8 +1,8 @@
 $color-primary: hsl(0, 0%, 10%);
-$color-text: hsl(0, 0%, 85%)
+$color-text: hsl(0, 0%, 20%);
 $color-subtext: hsl(0, 0%, 30%);
-$color-border: hsl(0, 0%, 20%);
-$color-box-background: hsl(0, 0%, 20%);
+$color-border: hsl(0, 0%, 85%);
+$color-box-background: mix($color-primary, white, 4%);
 $border-radius: 4px;
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -32,7 +32,7 @@ time {
 footer {
   margin: 2em 0;
   font-size: 0.8em;
-  color: hsl(0, 0%, 20%);
+  color: mix($color-text, white, 80%);
   padding-top: 1em;
 }
 
@@ -83,7 +83,7 @@ a {
   color: $color-primary;
   &:hover {
     color: black !important;
-    background: hsl(0, 0%, 20%);
+    background: #fffaf1;
   }
   &:after {
     position: relative;
@@ -100,7 +100,7 @@ a {
 }
 
 *:focus {
-  background: hsl(0, 0%, 20%);
+  background: #ffe8bc !important;
   color: black !important;
 }
 
@@ -128,7 +128,7 @@ nav {
 }
 
 code {
-  background: hsl(0, 0%, 20%);
+  background: #f5f5f5;
   padding: 0.1em 0.2em;
   border-radius: 4px;
 }
@@ -136,7 +136,7 @@ code {
 .invalid-link {
   color: #444444;
   cursor: help;
-  background: hsl(0, 0%, 20%);
+  background: #fafafa;
   padding: 0 0.1em;
 }
 
